@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     Node *game;
     int zero = 0;
-    char initial[10] = "AB CDEFGH\0",*aux;
+    char initial[10] = "ABCDE FGH\0",*aux;
     for(aux = initial; *aux != '\0'; aux++){
         if(*aux == ' '){
             break;
