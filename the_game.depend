@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1613941170 source:c:\users\tiago\onedrive\ambiente de trabalho\the_game\queue.c
+	"Item.h"
+	"tree.h"
+	"queue.h"
+
+1606963801 c:\users\tiago\onedrive\ambiente de trabalho\the_game\item.h
+
+1613907114 c:\users\tiago\onedrive\ambiente de trabalho\the_game\tree.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1613857956 c:\users\tiago\onedrive\ambiente de trabalho\the_game\queue.h
+	"Item.h"
+	<stdlib.h>
+
+1613941319 source:c:\users\tiago\onedrive\ambiente de trabalho\the_game\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tree.h"
+	"queue.h"
+
+1613909067 source:c:\users\tiago\onedrive\ambiente de trabalho\the_game\tree.c
+	"tree.h"
+	"queue.h"
+
