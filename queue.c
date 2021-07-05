@@ -1,12 +1,4 @@
-/******************************************************************************
-* (c) 2010-2020 AED Team
 
-* Last mod: abl 2020-05-26
-*
-* DESCRIPTION
-*	Auxiliary functions for Tree lab - QUEUE
-*
-******************************************************************************/
 
 #include "Item.h"
 #include "tree.h"
@@ -24,19 +16,8 @@ struct _queue {
 };
 
 
-/******************************************************************************
- * QueueNew()
- *
- * Arguments:
- *
- * Returns: a pointer to Queue
- * Side-Effects: none
- *
- * Description: creates an empty queue
- *
- *****************************************************************************/
 
-Queue *QueueNew()
+Queue *NewQueue()
 {
   Queue * q = malloc(sizeof(Queue));
   q->first = NULL;
@@ -45,18 +26,6 @@ Queue *QueueNew()
 }
 
 
-/******************************************************************************
- * InsertLast()
- *
- * Arguments: queue - a queue
- *            this - a "node" to insert last in the queue
- *
- * Returns: void
- * Side-Effects: none
- *
- * Description: inserts an element at the end of a queue
- *
- *****************************************************************************/
 
 void InsertLast(Queue* queue, Item this)
 {

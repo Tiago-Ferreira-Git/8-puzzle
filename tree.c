@@ -18,7 +18,7 @@ Node *aloca_node(){
 }
 
 void starter(Node *play){
-    stack = QueueNew();
+    stack = NewQueue();
     InsertLast(stack,play);
 }
 
