@@ -1,5 +1,4 @@
 
-
 #include "Item.h"
 #include "tree.h"
 #include "queue.h"
@@ -53,17 +52,7 @@ void InsertLast(Queue* queue, Item this)
 }
 
 
-/******************************************************************************
- * GetFirst()
- *
- * Arguments: queue - a queue
- *
- * Returns: pointer to first node in queue
- * Side-Effects: none
- *
- * Description: prints the tree in the Breathfirst format
- *
- *****************************************************************************/
+
 
 Item GetFirst(Queue* queue)
 {
