@@ -6,20 +6,22 @@ int main(int argc, char *argv[])
 {
     Node *game;
     int zero = 0;
-    char initial[10] = "EBHDAG CF\0",*aux,*aux2,inversions=0;
+    char initial[10] = "ABCDEFGH_\0",*aux,*aux2,inversions=0;
+    strcpy(initial,argv[1]);
+    printf("%s\n",initial);
     for(aux = initial; *aux != '\0'; aux++){
-        if(*aux == ' '){
+        if(*aux == '_'){
             break;
         };
         zero++;
     };
     for(aux = initial; *aux != '\0'; aux++){
-        if(*aux == ' '){
+        if(*aux == '_'){
             continue;
         }
         inversions += *aux-65;
         for(aux2 = initial; *aux2 != '\0'; aux2++){
-            if(*aux2 == ' '){
+            if(*aux2 == '_'){
                 continue;
             }else if(*aux2 < *aux){
                 inversions--;
@@ -31,6 +33,7 @@ int main(int argc, char *argv[])
     printf("Inversions %d\n",inversions);
     if(inversions%2!=0){
         printf("Este puzzle não tem solução");
+        exit(0);
     }
     game = NewNode(initial,zero,'\0');
     starter(game);

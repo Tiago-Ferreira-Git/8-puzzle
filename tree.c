@@ -10,7 +10,7 @@ struct _Node{
     char p;
 };
 
-static char solution[10] = "ABCD EFGH\0";
+static char solution[10] = "ABCD_EFGH\0";
 Queue *stack;
 
 Node *aloca_node(){
@@ -47,7 +47,7 @@ void move_up(Node *play,int *cenas,char aux2[10]){
         aux = (play->move)[*cenas];
         strcpy(aux2,play->move);
         aux2[play->blank] = aux;
-        aux2[*cenas] = ' ';
+        aux2[*cenas] = '_';
     }
 
 }
@@ -60,7 +60,7 @@ void move_down(Node *play,int *cenas,char aux2[10]){
         aux = play->move[*cenas];
         strcpy(aux2,play->move);
         aux2[play->blank] = aux;
-        aux2[*cenas] = ' ';
+        aux2[*cenas] = '_';
     }
 
 }
@@ -73,7 +73,7 @@ void move_left(Node *play,int *cenas,char aux2[10]){
         aux = play->move[*cenas];
         strcpy(aux2,play->move);
         aux2[play->blank] = aux;
-        aux2[*cenas] = ' ';
+        aux2[*cenas] = '_';
     }
 }
 void move_right(Node *play,int *cenas,char aux2[10]){
@@ -85,7 +85,7 @@ void move_right(Node *play,int *cenas,char aux2[10]){
         aux = play->move[*cenas];
         strcpy(aux2,play->move);
         aux2[play->blank] = aux;
-        aux2[*cenas] = ' ';
+        aux2[*cenas] = '_';
     }
 
 }
@@ -127,7 +127,7 @@ void answer(){
     Node *aux;
     while(stack != NULL){
         aux = GetFirst(stack);
-        printf("%s\n",aux->move);
+        /*printf("%s\n",aux->move);*/
         if(aux != NULL){
             if(strcmp(aux->move,solution) == 0){
                 return;
